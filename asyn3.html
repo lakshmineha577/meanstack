@@ -1,0 +1,18 @@
+<html>
+    <head></head>
+    <body>
+        <script>
+        let promise = new Promise(function (resolve,reject){
+            setTimeout(function (){
+                resolve('Promise resolved')},4000);
+            });
+            async function asyncFunc(){
+                console.log("Welcome Nishith");
+                let result = await promise;
+                console.log(result);
+            }
+            console.log("Bye Nishith");
+            asyncFunc();
+        </script>
+    </body>
+    </html>
