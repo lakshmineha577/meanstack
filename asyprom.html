@@ -1,0 +1,22 @@
+<html>
+    <head>
+    </head>
+    <body>
+    <script>
+        let prom= new Promise(function(resolve, reject){
+
+        });
+        console.log(prom);
+        const count =false;
+        let countValue = new Promise(function(resolve, reject){
+            if(count){
+                resolve("There is a count value.");
+            }
+            else{
+                reject("There is no count value");
+            }
+        });
+        console.log(countValue);
+    </script>
+    </body>
+</html>
