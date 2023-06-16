@@ -1,0 +1,24 @@
+<html>
+    <head>
+    </head>
+    <body >
+        <script>
+            //setTimeout("document.bgColor='White'",1000)
+            //setTimeout("document.bgColor='Light Pink'",1500)
+            //setTimeout("document.bgColor='Red'",2000)
+            //setTimeout("document.bgColor='Yellow'",2500)
+            //setTimeout("document.bgColor='Cyan'",1000)
+            //setTimeout("document.bgColor='Pink'",1000)
+            //setTimeout("document.bgColor='Magenta'",1000)
+            //setTimeout("document.bgColor='Green'",1000)
+            function disp()
+            {
+            var r=Math.round(Math.random()*255);
+            var g=Math.round(Math.random()*255);
+            var b=Math.round(Math.random()*255);
+            document.fgColor="rgb("+r+"+"+g+"+"+b+")";
+                setTimeout("disp()",1000);
+            }
+        </script>
+    </body>
+</html>
