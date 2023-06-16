@@ -1,0 +1,22 @@
+<html><head>
+    <script type="text/javascript">
+    function disp()
+    {
+       var list=document.forms[0].subj;
+       alert(list.options[list.selectedIndex].value);
+     //document.write(list.options[list.selectedIndex].value);
+    }
+    </script></head>
+    <body>
+    <form>
+    <center>
+      <select name="subj" onChange="disp()">
+       <option value="Y DURGA PRASAD">MEAN STACK
+        <option value="T SATYA KUMARI">ML
+        <option value="T VEERRAJU">CNS  
+        <option value="V VEERA PRASAD">CD
+      </select>
+    </center>
+    </form>
+    </body>
+    </html>

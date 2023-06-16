@@ -1,0 +1,25 @@
+<html>
+<head>
+<script type="text/javascript">
+function removeOption()
+{
+var x=document.getElementById("myselect");
+//x.remove(x.selectedIndex);
+x.addItem("DURGA PRASAD");
+alert("ITEM IN CHOICE DELETED");
+}
+</script>
+</head>
+<body>
+<form>
+<select id="myselect">
+<option>Rambha</option>
+<option>Uravasi</option>
+<option>swamy</option>
+<option>asoka</option>
+<option>syamala</option>
+<option>apasara</option>
+<input type="button" onclick="removeOption()" value="REMOVE OPTION FROM LIST">
+</form>
+</body>
+</html>

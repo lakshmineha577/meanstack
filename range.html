@@ -1,0 +1,31 @@
+<html>
+<head>
+<script type="text/javascript">
+function f1()
+{
+ var i=document.getElementById("tf1").value;
+ var j=document.getElementById("tf2").value;
+var k=document.getElementById("tf3").value;
+var r=parseInt(i);
+var g=parseInt(j);
+var b=parseInt(k);
+var d=document.getElementById("d1");
+d.style.backgroundColor='rgb('+r+','+g+','+b+')';
+console.log(i);
+console.log(j);
+console.log(k);
+}
+</script>
+</head>
+<body><center>
+<form>
+<label>RED:</label>
+<input type=range min=1 max=100 step=10 id="tf1" onInput="f1()">
+<label>GREEN:</label>
+<input type=range min=1 max=100  step=10 id="tf2" onInput="f1()">
+<label>BLUE:</label>
+<input type=range  min=1 max=100 step=10 id="tf3" onInput="f1()"><br><br>
+<div id="d1" style=height:200px;width:200px;background-color:lightpink>
+</form></center>
+</body>
+</html>

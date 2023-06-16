@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <style>
+
+            .view{
+                width:300px;
+                height:500px;
+                border-radious:20px;
+            }
+            .ta{
+                background-color: pink;
+        
+                border-top: 2px black;
+                border-left: 2px black;
+                border-right: 2px black;
+                width: 550px;
+                height: 500px;
+            }
+            ta,td{
+                padding: 12px 15px;
+            }
+            .view,ta{
+                padding:10px 10px;
+            }
+        </style>
+        <script type="text/javascript">
+              let name=[];
+          function disp()
+          {
+               
+                let input=document.getElementById("t1").value;
+                name.push(input);
+                console.log(name);
+              
+          }
+          function disp1()
+          {
+            let t=name.length;//4
+            let len=t-1;//3
+            let len1=Math.round(Math.random(name)*len);
+            let win=name[len1];
+             let data=document.getElementById("s1");
+             data.innerHTML = "<h4>The winner is :</h4>"+ win;
+          }
+        </script>
+    </head>
+    <body>
+        <center>
+        <fieldset class="view">
+        <table border="2" class="ta" >
+            <tr><td>
+        <label>enter name:</label>
+        <input type="text" name="text" size="20" id="t1"></td></tr>
+        <tr><td> <input type="button" value="submit" onClick="disp()">&nbsp;&nbsp;&nbsp;
+        <input type="button" value="show" onClick="disp1()"></td> </tr>
+       
+    </table>
+</fieldset>
+
+</center>
+<span id="s1"><h1>The winner is:</h1></span>
+    </body>
+</html>

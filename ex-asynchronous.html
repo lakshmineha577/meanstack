@@ -1,0 +1,31 @@
+<html>
+<head></head>
+<body>
+    <script>
+        function disp(x,y){
+            console.log(x);
+            y();
+    }
+    function pres(){
+        console.log("Haiiiiii");
+    }
+    disp(5,pres)
+        //console.log('one');
+        //setTimeout(() => alert("Lakshmi Neha"),1000);
+        //console.log("two");
+        //console.log("three");
+        function addNum(a,b){
+            return a+b; }
+        function multiplyNum(a,b){
+            return a*b;
+        }
+        function operate(func,a,b){
+            return func(a,b);
+        }
+        var res= operate(addNum, 10,30);
+        console.log(res);
+        var res= operate(multiplyNum, 10,30);
+        console.log(res);
+   </script>
+</body>
+</html>
