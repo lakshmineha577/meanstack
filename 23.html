@@ -1,0 +1,67 @@
+<html>
+<head>
+<style>
+.c{
+height:100vh;
+background-size:cover;
+margin:20px;
+padding:10px;
+justify-content:center;
+}
+</style>
+</head>
+<body>
+<script>
+let python=new Set();
+let java=new Set();
+function add(){
+let n=document.getElementById("s").value;
+let a=document.getElementById("opt").value;
+if(a=="Java"){
+java.add(n);
+}
+else if(a=="Python"){
+python.add(n);
+}
+}
+function disp(){
+console.log(python);
+console.log(java);
+let common=[];
+let b;
+for(let i of python){
+if(java.has(i)){
+ b=common.push(i);
+}
+}
+const p=Array.from(python);
+const j=Array.from(java);
+console.log(common);
+                  document.write("<table border=1 >");
+                    document.write("<tr>");
+                    document.write("<th>Python</th>");
+                    document.write("<td>"+p+"</td>");
+                    document.write("</tr>");
+                    document.write("<tr>");
+                    document.write("<th>Java</th>");
+                    document.write("<td>"+j+"</td>");
+                    document.write("</tr>");
+                    document.write("<tr>");
+                    document.write("<th>Common</th>");
+                    document.write("<td>"+common+"</td>");
+                    document.write("</tr>");
+                    document.write("</table>");
+}
+</script>
+<div class="c">
+<label>Enter Name:</label>
+<input type="text" id="s"/>
+<select id="opt">
+<option>Java</option>
+<option>Python</option>
+</select>
+<input type="submit" onClick="add()"/>
+<input type="submit" value="display" onClick="disp()"/>
+</div>
+</body>
+</html>
