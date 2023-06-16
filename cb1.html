@@ -1,0 +1,20 @@
+<html><head>
+    <script type="text/javascript">
+     function radiocheck()
+     {
+       var selection=document.f1.col;
+        for(i=0;i<selection.length;i++)
+        if(selection[i].checked==true)
+        alert('SELECTED COLLEGE IS>>>>>>>>>>>>'+selection[i].value)
+     }
+    </script></head>
+    <body>
+    <form name="f1">
+      <input type="radio" name="col" value="ADITYA ENGG COLLEGE">AEC<br>
+      <input type="radio" name="col" value="ADITYA COLLEGE OF ENGG">ACOE<br>
+       <input type="radio" name="col" value="ADITYA COLLEGE OF ENGG & TECH ">ACET<br>
+       <input type="radio" name="col" value="PRAGATI ENGG COLLEGE">PRAGATI<br>
+    <input type="submit" value="SELECT COLLEGE" onClick="radiocheck()">
+    </form>
+    </body>
+    </html>
